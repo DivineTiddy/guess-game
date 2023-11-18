@@ -14,14 +14,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-.again{
+.again {
   padding: 5px;
   font-family: cursive;
   font-size: large;
   font-weight: bold;
   background-color: burlywood;
 }
-.check{
+.check {
   padding: 5px;
   font-size: large;
   font-family: cursive;
@@ -75,7 +75,6 @@ body {
   height: auto;
   justify-content: center;
   align-items: center;
-
 }
 .startcontainer {
   display: flex;
@@ -83,48 +82,47 @@ body {
   width: 40%;
   height: auto;
 }
-.inputnumber{
-    width: 7rem;
-    height: 7rem;
-    padding: 10px;
-    margin: 20px 0px;
-    background-color: whitesmoke;
-    font-size: larger;
-    font-weight: bolder;
+.inputnumber {
+  width: 7rem;
+  height: 7rem;
+  padding: 10px;
+  margin: 20px 0px;
+  background-color: whitesmoke;
+  font-size: larger;
+  font-weight: bolder;
 }
-.check{
-    width: 5rem;
-    height: auto;
-    padding: 5px;
-
+.check {
+  width: 5rem;
+  height: auto;
+  padding: 5px;
 }
-.startcontainer{
-    align-items: center;
+.startcontainer {
+  align-items: center;
 }
-.about{
+.about {
   text-align: center;
 }
-@media screen and (max-width:400px){
-  .again{
+@media screen and (max-width: 400px) {
+  .again {
     padding: 2px;
   }
-  .secretnumber{
+  .secretnumber {
     width: 7rem;
     height: 4rem;
   }
-  .startcontainer{
+  .startcontainer {
     width: 20%;
     display: flex;
     justify-content: space-between;
   }
 }
-@media screen and (max-width:350px){
-  .again{
+@media screen and (max-width: 350px) {
+  .again {
     padding: 0px;
     font-size: medium;
     font-weight: normal;
   }
-  .guessmynumber h4{
+  .guessmynumber h4 {
     text-align: center;
     margin-top: 60px;
   }
