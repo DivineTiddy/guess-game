@@ -1,7 +1,7 @@
 "use strict";
-let score = 20 - 1;
+let score = 10 - 1;
 let min = 1;
-let secretnumber = Math.trunc(Math.random() * 29) + 1;
+let secretnumber = Math.trunc(Math.random() * 11) + 1;
 console.log(secretnumber);
 function displayMassage(massage) {
   document.querySelector(`.startguessing`).textContent = massage;
@@ -19,7 +19,7 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
     document.querySelector(`.secretnumber`).textContent = ` ${secretnumber}`;
     document.querySelector(`.highscore`).textContent = `${secretnumber}`;
     document.querySelector(`body`).style.backgroundColor = `green`;
-    document.querySelector(`.guessmynumber`).textContent = `MTN:123456789`;
+    document.querySelector(`.guessmynumber`).textContent = `You Win`;
   } else if (inputnumber > secretnumber) {
     displayMassage(`Too hight`);
     document.querySelector(`.score`).textContent = `${score--}`;
@@ -34,13 +34,19 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
 });
 
 document.querySelector(`.again`).addEventListener(`click`, function () {
+  score = 10;
   displayMassage(`start guessing`)
-  document.querySelector(`.score`).textContent = `20`;
+  document.querySelector(`.score`).textContent = `10`;
   document.querySelector(`body`).style.backgroundColor = ` rgb(2, 2, 39)`;
   document.querySelector(`.secretnumber`).textContent = `?`;
   document.querySelector(
     `.guessmynumber`
   ).textContent = `Guess My birth month,win airtime`;
-  secretnumber = Math.trunc(Math.random() * 29) + 1;
+  secretnumber = Math.trunc(Math.random() * 11) + 1;
   console.log(secretnumber);
+  document.querySelector(`.score`).textContent = score;
+  document.querySelector(`.inputnumber`).value = ``;
+  
+  
+
 });
